@@ -6,7 +6,7 @@ gem install compass -y
 npm -g install forever
 
 echo -e "Cloning tviplayer-sassdoc\n\n"
-git clone 
+git clone https://github.com/middric/tviplayer-sassdoc.git
 cd tviplayer-sassdoc
 
 echo -e "Seting up sassdoc as a service\n\n"
