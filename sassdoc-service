@@ -22,7 +22,7 @@ start() {
     echo "Starting $NAME"
     forever --pidFile $PIDFILE --sourceDir $APPLICATION_DIRECTORY \
         -a -l $LOGFILE --minUptime 5000 --spinSleepTime 2000 \
-        start $APPLICATION_START /mnt/hgfs/workspace/tviplayer/webapp/static-versioned/sassDoc.json
+        start $APPLICATION_START /mnt/hgfs/workspace/tviplayer/webapp/static-versioned/sassdoc.json
     RETVAL=$?
 }
  
