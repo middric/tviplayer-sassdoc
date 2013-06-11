@@ -29,7 +29,8 @@ start() {
 stop() {
     if [ -f $PIDFILE ]; then
         echo "Shutting down $NAME"
-        forever stop $APPLICATION_START
+        forever --sourceDir $APPLICATION_DIRECTORY \
+            stop $APPLICATION_START
         rm -f $PIDFILE
         RETVAL=$?
     else
